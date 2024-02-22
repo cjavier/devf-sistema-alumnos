@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Base de datos alumnos</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h4>Alta de alumnos</h4>
+      Nombre: <input id="nombre" /> <br>
+      Apellido: <input id="apellido"/> <br>
+      Edad: <input id="edad"/> <br>
+      <button onclick="crear_alumno()">Crear Alumno</button>
+    </div><hr>
+    <div>
+        <h4>Crear Materia</h4>
+        Nombre de la Materia: <input id="nombre-materia"/> <br>
+        <button onclick="crear_materia()">
+          Crear nueva materia
+        </button>
+      </div> <hr>
+    <div>
+        <h4>Crear Grupo</h4>
+        Lista de Materias: <select id="materias-disponibles"></select> <br>
+        <button onclick="crear_grupo()">
+          Crear nuevo grupo
+        </button>
+      </div> <hr>
+    <div>
+        <h4>Inscribir alumno en grupo</h4>
+        Lista de Alumnos: <select id="alumnos-a-inscribir"></select> <br>
+        Lista de Grupos: <select id="grupos-para-inscribir"></select> <br>
+        <button onclick="inscribir_alumno()">
+          Inscribir alumno a grupo
+        </button>
+      </div> <hr>
+      <div>
+        <h4>Calificar Alumno</h4>
+        Seleccionar Grupo: <select id="grupos-activos"></select> <br>
+        Seleccionar Alumno: <select id="alumnos-en-grupos-activos"></select> <br>
+        Calificación <input id="calificacion"/> <br>
+        <button onclick="Calificar_alumno()">
+          Calificar Alumno
+        </button>
+      </div> <hr>
+      <div>
+        <h4>Busqueda de alumnos por nombre</h4>
+        Nombre: <input id="busqueda_alumno_nombre" /> <br>
+        <button onclick="obtener_alumno_nombre()">
+          Buscar Alumno por Nombre
+        </button>
+        <div id="resultado_alumno_nombre">
+          
+        </div>
+      </div> <hr>
+      <div>
+        <h4>Busqueda de alumnos por apellido</h4>
+        Nombre: <input id="busqueda_alumno_apellido" /> <br>
+        <button onclick="obtener_alumno_apellido()">
+          Buscar Alumno por Nombre
+        </button>
+        <div id="resultado_alumno_apellido">
+          
+        </div>
+      </div> <hr>
+      <div>
+        <h4>Obtener promedio del alumno</h4>
+        Nombre: <input id="busqueda_alumno_promedio" /> <br>
+        <button onclick="obtener_alumno_nombre_promedio()">
+          Buscar Alumno y obtener promedio
+        </button>
+        <div id="resultado_alumno_promedio">
+          
+        </div>
+      </div> <hr>
+      <div>
+        <h4>Obtener promedio del grupo</h4>
+        Seleccionar Grupo: <select id="grupos-activos-promedio"></select> <br>
+        <button onclick="obtener_promedio_grupo()">
+          Obtener promedio del grupo
+        </button>
+        <div id="resultado_promedio_grupo">
+          
+        </div>
+      </div> <hr>
+      <div>
+        <h4>Obtener Lista del grupo con calificaciones</h4>
+        Seleccionar Grupo: <select id="grupos-activos-lista"></select> <br>
+        <button onclick="obtener_lista_grupo()">
+          Obtener Lista del grupo
+        </button>
+        <div id="resultado_lista_grupo">
+          
+        </div>
+      </div> <hr>
+    <!-- The website JavaScript file -->
+    <script src="script.js" ></script>
+  </body>
+</html>
